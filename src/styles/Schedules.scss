@@ -1,0 +1,176 @@
+.schedules {
+    position: relative;
+    min-height: 120vh;
+    width: 100%;
+    background-color: #EECEFF;
+    color: #711A79;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6vw 4vw;
+
+    .schedules-heading {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4vw;
+        z-index: 2;
+
+        p {
+            background-color: #FFF;
+            color: #222;
+            padding: 18px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        h1 {
+            position: relative;
+            font-family: Moliga;
+            font-weight: 500;
+            line-height: 0.7;
+            font-size: 7vw;
+            text-align: center;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 40%;
+        height: auto;
+        background: #E7BFFC;
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 80%,
+                70% 80%,
+                50% 100%,
+                0 100%,
+                0 100%,
+                0 0);
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 6vw 4vw;
+        z-index: 1;
+
+        h4 {
+            font-family: Moliga;
+            font-weight: 500;
+            font-size: 2.5vw;
+            line-height: 0.8;
+        }
+
+        p {
+            color: #222;
+            font-size: 1.05vw;
+            width: 65%;
+        }
+
+        button {
+            width: fit-content;
+            background-color: #711A79;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 18px;
+            border-radius: 18px;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 6px 6px 0px #79797956;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .schedules-content {
+        position: relative;
+        align-self: flex-end;
+        height: 35vh;
+        width: 50%;
+        margin-top: 4vw;
+        margin-right: 12vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        z-index: 2;
+
+        .schedule-box {
+            height: 30%;
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFF;
+            border: 1px solid #711A79;
+            box-shadow: 2px 2px 0 #711A79;
+
+            .sb-left {
+                width: 30%;
+                border-right: 1px solid #711A79;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1vw;
+                gap: 5px;
+
+                h4 {
+                    font-size: 1vw;
+                    color: #000;
+                }
+                
+                p {
+                    font-size: 0.7vw;
+                    font-weight: bold;
+                }
+            }
+            
+            .sb-right {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1vw;
+
+                .sb-inner {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    h4 {
+                        font-size: 1vw;
+                        color: #000;
+                    }
+
+                    p {
+                        font-size: 0.9vw;
+                        color: #222;
+                    }
+                }
+
+                button {
+                    padding: 12px 18px;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 1vw;
+                    background-color: #F4DFFF;
+                    color: #711A79;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

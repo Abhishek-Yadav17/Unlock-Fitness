@@ -1,0 +1,76 @@
+.updates {
+    position: relative;
+    min-height: 120vh;
+    width: 100%;
+    color: #711A79;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 4vw;
+
+    .updates-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        padding: 4vw;
+
+        p {
+            background-color: #EAC2FF;
+            color: #222;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        h1 {
+            position: relative;
+            font-family: Moliga;
+            font-weight: 500;
+            line-height: 0.7;
+            font-size: 6vw;
+        }
+    }
+
+    .updates-cards {
+        position: relative;
+        align-self: center;
+        height: 70vh;
+        width: 65%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .update-card {
+            width: 31%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    >img {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        width: 30vw;
+    }
+
+
+    .updates-bottom {
+        position: absolute;
+        bottom: 0;
+        height: 30%;
+        width: 100%;
+        background-color: #FBF3FF;
+    }
+}

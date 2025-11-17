@@ -1,0 +1,117 @@
+.founders {
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-color: #FFF;
+    color: #FFF;
+
+    .founders-top {
+        position: relative;
+        height: 60%;
+        width: 100%;
+        background-color: #711A79;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2vw 4vw;
+
+        .founders-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+
+            p {
+                background-color: #EAC2FF;
+                color: #222;
+                padding: 15px 20px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: bold;
+                width: fit-content;
+            }
+
+            h1 {
+                position: relative;
+                font-family: Moliga;
+                font-weight: 500;
+                line-height: 0.7;
+                font-size: 6vw;
+            }
+        }
+
+        >img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20vw;
+        }
+    }
+
+    .founders-bottom {
+        height: 40%;
+        width: 100%;
+        background-color: #FBF3FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+
+        .founders-card {
+            height: 28vw;
+            width: 70%;
+            margin-top: -15vw;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+
+            .card {
+                width: 31%;
+                background-color: #FFF;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 6px 6px 0 #DEC2ED;
+                overflow: hidden;
+                transform: rotate(-3deg);
+                padding: 10px;
+
+                &:nth-child(2) {
+                    transform: rotate(0deg);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(3deg);
+                }
+
+                img {
+                    width: 100%;
+                    height: 80%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                .card-info {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1vw;
+
+                    h3 {
+                        font-size: 1.2vw;
+                        color: #222;
+                    }
+
+                    p {
+                        font-size: 0.9vw;
+                        color: #444;
+
+                        span {
+                            color: #711A79;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

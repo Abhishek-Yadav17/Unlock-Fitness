@@ -1,0 +1,128 @@
+.process {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #D9ABF1;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6vw 4vw;
+
+    .process-heading {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            background-color: #FFF;
+            color: #222;
+            padding: 18px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 2vw;
+        }
+
+        h1 {
+            position: relative;
+            font-family: Moliga;
+            font-weight: 500;
+            line-height: 0.7;
+            font-size: 7vw;
+            text-align: center;
+
+            &:nth-child(3) {
+                font-family: Instink;
+                line-height: 0;
+                margin-top: -20px;
+                font-size: 8vw;
+                color: #711A79;
+            }
+        }
+    }
+
+    .process-content {
+        height: 38vw;
+        width: 85%;
+        color: #222;
+        margin-top: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+
+        .process-inner {
+            height: 100%;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .elem {
+                height: 49%;
+                width: 100%;
+                background-color: #FFF;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 2vw;
+
+                img {
+                    align-self: flex-end;
+                    width: 5vw;
+                }
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h4 {
+                        font-size: 1.2vw;
+                        font-weight: 900;
+                    }
+
+                    p {
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+        
+        .process-mid {
+            height: 100%;
+            width: 33%;
+            background-color: #EAC2FF;
+            border: 5px solid #711A79;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #711A79;
+
+            h5 {
+                font-family: Moliga;
+                font-weight: 500;
+                font-size: 4vw;
+                line-height: 0.5;
+            }
+            
+            h4 {
+                font-family: Moliga;
+                font-weight: 500;
+                font-size: 6vw;
+                line-height: 1;
+            }
+
+            h2 {
+                font-family: Instink;
+                font-weight: 500;
+                color: #003D8E;
+                font-size: 8vw;
+                line-height: 0;
+            }
+        }
+    }
+}

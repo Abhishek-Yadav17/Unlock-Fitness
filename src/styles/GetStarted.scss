@@ -1,0 +1,90 @@
+.starter {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF;
+    color: #711A79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw 4vw;
+
+    .starter-content {
+        width: 100%;
+        height: 70vh;
+        background-color: #D9ABF1;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .starter-left {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .starter-hero {
+                height: 40vw;
+                width: 30vw;
+            }
+
+            .starter-arrow {
+                position: absolute;
+                left: 20%;
+                width: 4vw;
+            }
+        }
+        
+        .starter-right {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            padding: 4vw 2vw;
+
+            h1 {
+                font-family: Moliga;
+                font-weight: 500;
+                font-size: 6vw;
+                line-height: 0.7;
+            }
+
+            p {
+                width: 40%;
+                font-size: 1vw;
+            }
+
+            button {
+                padding: 15px 20px;
+                border: none;
+                border-radius: 15px;
+                background-color: #FFF;
+                color: #222;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: fit-content;
+                font-weight: bold;
+                font-size: 0.9vw;
+                box-shadow: 4px 4px 0 #AE89C1;
+
+                img {
+                    width: 1.1vw;
+                }
+            }
+
+            .starter-arrow2 {
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+                width: 4vw;
+                transform: rotate(120deg);
+            }
+        }
+    }
+}
